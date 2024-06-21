@@ -78,9 +78,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #000;
+  background-image: url("./img/back.jpg");
   padding: 188px 0;
-  max-width: 1440px;
 }
 
 h1 {
