@@ -51,13 +51,14 @@ p {
   text-decoration: none;
   font-weight: 600;
   font-size: 1.4em;
+  font-family: BB-Regular, Helvetica Neue, Helvetica, Arial, sans-serif;
   padding-left: 15px;
   padding-bottom: 21px;
+  letter-spacing: 3px;
 }
 body {
   background: #fff;
   font-family: "Bebas Neue", sans-serif;
-  letter-spacing: 5px;
 }
 
 .navMenu {
@@ -65,6 +66,7 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  letter-spacing: 5px;
 }
 
 .navMenu a {
@@ -77,7 +79,6 @@ body {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   align-items: center;
-  /* padding: 10px 0; */
   padding-left: 7px;
   padding-right: 7px;
 }
@@ -108,7 +109,7 @@ h1 {
   font-weight: 700;
   text-align: center;
   font-size: 70px;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: BB-Regular, Helvetica Neue, Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   background: linear-gradient(90deg, #000, #fff, #000);
   letter-spacing: 5px;
@@ -163,7 +164,15 @@ span {
   transition: 0.5s ease;
 }
 /* --------------WOMEN-------------- */
-.women-title {
+.women {
+  background-image: url("./img/baw.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 480px 20px 24px 20px;
+  max-width: 1566px;
+}
+/* .women-title {
   font-weight: 400;
   text-align: center;
   font-size: 40px;
@@ -188,15 +197,82 @@ span {
   &:hover img:not(:hover) {
     filter: saturate(0.2) opacity(0.5);
   }
-}
+} */
 /* ---------------MEN---------------------- */
-.men-title {
-  font-weight: 400;
-  text-align: center;
-  font-size: 40px;
+.men {
+  background-image: url("./img/bam.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 480px 20px 24px 20px;
+  max-width: 1566px;
+}
+
+/* ----------------APOINTMENT--------------- */
+.appointment {
+  background-image: url("./img/baap.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 480px 20px 24px 20px;
+  max-width: 1566px;
+}
+
+.btn {
+  --color: #e5ebeb;
+  --color2: rgb(53, 57, 58);
+  padding: 0.8em 1.75em;
+  background-color: transparent;
+  border-radius: 6px;
+  border: 0.3px solid var(--color);
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+  font-weight: 300;
+  font-size: 19px;
   font-family: "Bebas Neue", sans-serif;
-  margin-top: 20px;
-  margin-bottom: 8px;
+  text-transform: uppercase;
+  color: var(--color);
+}
+
+.btn::after,
+.btn::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  transform: skew(90deg) translate(-50%, -50%);
+  position: absolute;
+  inset: 50%;
+  left: 25%;
+  z-index: -1;
+  transition: 0.5s ease-out;
+  background-color: var(--color);
+}
+
+.btn::before {
+  top: -50%;
+  left: -25%;
+  transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn:hover::before {
+  transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn:hover::after {
+  transform: skew(45deg) translate(-50%, -50%);
+}
+
+.btn:hover {
+  color: var(--color2);
+}
+
+.btn:active {
+  filter: brightness(0.7);
+  transform: scale(0.98);
 }
 /* --------------FOOTER----------------- */
 .footer {
