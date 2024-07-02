@@ -1,7 +1,7 @@
 /* .section {
   padding-top: 120px;
   padding-bottom: 120px;
-} */
+}  */
 
 .container {
   width: 1158px;
@@ -28,12 +28,15 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 }
-/* ----------------------- */
+
+/* --------------------------- */
 .header {
   background-color: #fff;
   padding-top: 30px;
 }
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -56,6 +59,7 @@ p {
   padding-bottom: 21px;
   letter-spacing: 3px;
 }
+
 body {
   background: #fff;
   font-family: "Bebas Neue", sans-serif;
@@ -92,11 +96,11 @@ body {
 }
 
 /* ----------------HERO-------------------------- */
-
 * {
   margin: 0;
   padding: 0;
 }
+
 .main-section {
   display: flex;
   justify-content: center;
@@ -126,6 +130,7 @@ h1 {
   0% {
     background-position-x: -500%;
   }
+
   100% {
     background-position-x: 500%;
   }
@@ -142,8 +147,7 @@ h1 {
   text-align: center;
   font-size: 40px;
   font-family: "Bebas Neue", sans-serif;
-  margin-top: 20px;
-  margin-bottom: 8px;
+  margin-top: 15px;
 }
 
 span {
@@ -153,26 +157,13 @@ span {
 .about-img-list {
   display: flex;
   gap: 14px;
+
 }
 
-.border img {
-  transition: 0.5s ease;
-}
 
-.border img:hover {
-  box-shadow: 0 0 0 10px #000000;
-  transition: 0.5s ease;
-}
+
 /* --------------WOMEN-------------- */
-.women {
-  background-image: url("./img/baw.jpg");
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 480px 20px 24px 20px;
-  max-width: 1566px;
-}
-/* .women-title {
+.women-title {
   font-weight: 400;
   text-align: center;
   font-size: 40px;
@@ -180,11 +171,16 @@ span {
   margin-top: 20px;
 }
 
+.women-s {
+  text-align: center;
+}
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
   grid-gap: 2em;
   pointer-events: none;
+  margin-bottom: 16px;
 
   img {
     display: block;
@@ -195,18 +191,20 @@ span {
   }
 
   &:hover img:not(:hover) {
-    filter: saturate(0.2) opacity(0.5);
+    /* filter: saturate(0.2) opacity(0.5); */
+    filter: drop-shadow(16px 16px 20px #8000) invert(95%);
   }
-} */
+}
+
 /* ---------------MEN---------------------- */
-.men {
+/* .men {
   background-image: url("./img/bam.jpg");
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 480px 20px 24px 20px;
   max-width: 1566px;
-}
+} */
 
 /* ----------------APOINTMENT--------------- */
 .appointment {
@@ -274,6 +272,7 @@ span {
   filter: brightness(0.7);
   transform: scale(0.98);
 }
+
 /* --------------FOOTER----------------- */
 .footer {
   background: #000;
@@ -319,11 +318,13 @@ span {
     text-align: left;
     padding: 5%;
   }
+
   .footer .row ul li {
     display: block;
     margin: 10px 0px;
     text-align: left;
   }
+
   .footer .row a i {
     margin: 0% 3%;
   }
